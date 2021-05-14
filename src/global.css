@@ -1,0 +1,89 @@
+html,
+body,
+#root {
+  height: 100%;
+  /* letter-spacing: 2px; */
+  font-size: 1rem;
+  line-height: 16px;
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.color-bfbfbf {
+  color: #bfbfbf;
+}
+
+/* 背景色 */
+.bg-color-b5b5b5 {
+  background-color: #b5b5b5;
+}
+
+.bg-color-ffffff {
+  background-color: #ffffff;
+}
+
+.bg-color-gradital {
+  background: -webkit-radial-gradient(circle, white, red)
+}
+
+
+.color-b5b5b5 {
+  color: #b5b5b5;
+}
+
+/* 字体大小*/
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-2 {
+  font-size: 2rem;
+}
+
+.font-size-3 {
+  font-size: 3rem;
+}
+
+.font-size-4 {
+  font-size: 4rem;
+}
+
+.icon-margin {
+  margin: 5px;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 125% !important;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 150% !important;
+  }
+}
+
+@media only screen and (min-width: 1242px) {
+  html {
+    font-size: 187.5% !important;
+  }
+}

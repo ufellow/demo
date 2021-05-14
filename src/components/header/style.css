@@ -1,0 +1,64 @@
+.header_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 10px; */
+}
+
+/* .ant-tabs-tab:hover {
+    color: black !important;
+}
+
+
+
+:global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+    color: black !important;
+    border: none;
+}
+
+:global(.ant-tabs-tab .ant-tabs-tab-active) {
+    border: none !important;
+} */
+
+:global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+    color: black !important;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+
+/* //enter是入场前的刹那（点击按钮），appear指页面第一次加载前的一刹那（自动） */
+.fade-enter,
+.fade-appear {
+    opacity: 0;
+}
+
+/* //enter-active指入场后到入场结束的过程，appear-active则是页面第一次加载自动执行 */
+.fade-enter-active,
+.fade-appear-active {
+    opacity: 1;
+    transition: opacity 10000s linear;
+}
+
+/* //入场动画执行完毕后，保持状态 */
+.fade-enter-done {
+    opacity: 1;
+}
+
+/* 同理，出场前的一刹那，以下就不详细解释了，一样的道理 */
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 10000s linear;
+}
+
+.fade-exit-done {
+    opacity: 0;
+}

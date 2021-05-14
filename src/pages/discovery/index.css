@@ -1,0 +1,49 @@
+.main {
+   /* margin: 5px 8px; */
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px;
+}
+
+.header .menufolder {
+   display: flex;
+   align-items: center;
+   font-size: 2rem;
+}
+
+.search_box {
+   flex: 1;
+   margin: 0 10px;
+   text-align: left;
+   background-color: #ffffff;
+   border-radius: 20px;
+   padding: 8px 5px 8px 15px;
+}
+
+.recommend {
+   width: 100%;
+   margin: 10px 0;
+   border-top: 0.5px solid #b5b5b5;
+   padding: 15px 0 15px 15px;
+   background-color: #ffffff;
+}
+
+.recommend_top {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-right: 15px;
+}
+
+.reconmend_title {
+   font-size: 20px;
+   font-weight: 800;
+}
+
+.recommend_top .icon {
+   margin-left: -5px;
+
+}
