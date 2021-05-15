@@ -1,5 +1,5 @@
-.main {
-   /* margin: 5px 8px; */
+.discovery_container {
+   margin-bottom: 10rem;
 }
 
 .header {
@@ -23,7 +23,8 @@
    padding: 8px 5px 8px 15px;
 }
 
-.recommend {
+/* 推荐歌单 */
+.rec_palylist {
    width: 100%;
    margin: 10px 0;
    border-top: 0.5px solid #b5b5b5;
@@ -31,19 +32,41 @@
    background-color: #ffffff;
 }
 
-.recommend_top {
+.rec_palylist_top {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    margin-right: 15px;
 }
 
-.reconmend_title {
+.rec_palylist_title {
    font-size: 20px;
    font-weight: 800;
 }
 
-.recommend_top .icon {
+.rec_palylist_top .icon {
    margin-left: -5px;
+}
 
+/* 推荐歌 */
+.rec_songs {
+   padding: 1rem;
+   background-color: #fff;
+}
+
+.rec_songs_top {
+   display: flex;
+   justify-content: space-between;
+   font-size: 2rem;
+   font-weight: 600;
+   align-items: center;
+}
+
+.rec_songs_title {
+   margin: 0 1rem;
+   flex: 1;
+   text-align: left;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
 }

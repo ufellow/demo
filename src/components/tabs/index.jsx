@@ -43,7 +43,6 @@ const showMain = (idx) => {
 class Tabs extends React.Component {
     constructor(props) {
         super(props)
-
         const tabs = [
             { name: '发现', index: 0, icon: 'icon-faxian', isshow: true },
             { name: '播客', index: 1, icon: 'icon-boke', isshow: true },

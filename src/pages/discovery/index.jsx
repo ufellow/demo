@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { connect } from 'dva';
 import { MenuFoldOutlined, SearchOutlined } from '@ant-design/icons';
+import { Carousel } from 'antd';
 import { CSSTransition } from 'react-transition-group'
 import Center from './../../components/center'
 import CarouselConatiner from './../../components/carousel';
 import SongSheetList from './../../components/songSheet/index'
+import SongRow from './../../components/songRow/index'
+import More from './../../components/more/index'
 import styles from './index.css'
 import IconFont from './../../assets/iconlink'
 const Discovery = (props) => {
@@ -39,7 +42,7 @@ const Discovery = (props) => {
         setShow(false)
     }
     return (
-        <div className={styles.main} style={style}>
+        <div className={styles.discovery_container} style={style}>
             {/* <Header /> */}
 
             <CSSTransition
@@ -55,12 +58,33 @@ const Discovery = (props) => {
                 <div className={styles.search_box}> <SearchOutlined /> <span>国风堂</span> </div>
             </div>
             <CarouselConatiner carouselSettings={carouselSettings} banners={props.banners} />
-            <div className={styles.recommend}>
-                <div className={styles.recommend_top}>
-                    <div className={styles.reconmend_title}>推荐歌单</div>
-                    <div className='font-size-14'>更多 <IconFont type='icon-jiantou' className={styles.icon} /></div>
+            {/* 推荐歌单 */}
+            <div className={styles.rec_palylist}>
+                <div className={styles.rec_palylist_top}>
+                    <div className={styles.rec_palylist_title}>推荐歌单</div>
+                    <More />
                 </div>
-                <SongSheetList songs={props.recommendsongs}></SongSheetList>
+                <SongSheetList songs={props.recPlaylist}></SongSheetList>
+            </div>
+            {/* 推荐歌曲 */}
+            <div className={styles.rec_songs}>
+                <div className={styles.rec_songs_top}>
+                    <IconFont type='icon-shuaxin' />
+                    <span className={styles.rec_songs_title}>让你单曲循环的华语歌你好你好你好你好</span>
+                    <More></More>
+                </div>
+                <Carousel dots='false'>
+                    <div>
+                        <SongRow></SongRow>
+                        <SongRow></SongRow>
+                        <SongRow></SongRow>
+                    </div>
+                    <div>
+                        <SongRow></SongRow>
+                        <SongRow></SongRow>
+                        <SongRow></SongRow>
+                    </div>
+                </Carousel>
             </div>
         </div>
     )
@@ -70,7 +94,7 @@ const mapStateToProps = (state) => {
     return {
         banners: state.discovery.banners,
         tabType: 2,
-        recommendsongs: state.discovery.recommendsongs
+        recPlaylist: state.discovery.recPlaylist
     }
 }
 export default connect(mapStateToProps)(Discovery);

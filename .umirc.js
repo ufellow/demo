@@ -25,7 +25,7 @@ export default {
   ],
   proxy: {
     '/api': {
-      target: "http://localhost:3000/",
+      target: "http://192.068.0.102:3000/",
       changeOrigin: true
     }
   }

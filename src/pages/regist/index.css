@@ -1,0 +1,46 @@
+.regist_container {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/* 
+.regist_type {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1.5rem;
+} */
+
+.input_box {
+    margin: 1.5rem;
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.input_box span {
+    color: #b5b5b5;
+
+}
+
+.regist_nextstep {
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+}
+
+:global(.ant-message-notice-content) {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 12rem;
+}
+
+:global(.ant-message-info) {
+    display: flex;
+    flex-direction: column;
+}
+
+:global(.ant-message-info span:first-child) {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}

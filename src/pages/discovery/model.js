@@ -1,11 +1,12 @@
-import { getCarouselList, recommendSongsList } from './service';
+import { getCarouselList, recommendPlayList, recommendSongsList } from './service';
 
 const carouselModel = {
     namespace: 'discovery',
     state: {
         banners: [],
         tabType: 3,
-        recommendsongs: []
+        recPlaylist: [],
+        recSongs: []
     },
     reducers: {
         getList(state, action) {
@@ -19,10 +20,11 @@ const carouselModel = {
         *getRemote(action, { put, call, select }) {
             const tabType = yield select(discovery => discovery.tabType);
             const banners = yield call(getCarouselList, { tabType: tabType });
-            const recommendsongs = yield call(recommendSongsList);
+            const recPlaylist = yield call(recommendPlayList);
+            const recSongs = yield call(recommendSongsList);
             yield put({
                 type: 'getList',
-                payload: { banners, tabType, recommendsongs }
+                payload: { banners, tabType, recPlaylist, recSongs }
             })
 
         }

@@ -19,6 +19,19 @@ export const getCarouselList = async (params) => {
             })
     )
 }
+export const recommendPlayList = async (params) => {
+    return (
+        request(Apis.recommendPlaylistApi)
+            .then((res => {
+                if (res.code == 200)
+                    return (res.result);
+
+            }))
+            .catch(error => {
+                console.log(error)
+            })
+    )
+}
 export const recommendSongsList = async (params) => {
     return (
         request(Apis.recommendSongsApi)

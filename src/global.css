@@ -26,12 +26,20 @@ li {
 }
 
 /* 背景色 */
+.bg-color-e8e8e8 {
+  background-color: #e8e8e8;
+}
+
 .bg-color-b5b5b5 {
   background-color: #b5b5b5;
 }
 
 .bg-color-ffffff {
   background-color: #ffffff;
+}
+
+.bg-color-e60026 {
+  background-color: #e60026;
 }
 
 .bg-color-gradital {
@@ -60,8 +68,12 @@ li {
   font-size: 4rem;
 }
 
+.icon-default {
+  margin: 0;
+}
+
 .icon-margin {
-  margin: 5px;
+  margin-left: 0.2rem;
 }
 
 @media only screen and (min-width: 320px) {
