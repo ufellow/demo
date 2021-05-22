@@ -1,0 +1,22 @@
+.verify_box {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+
+.verify_inputs {
+    visibility: hidden;
+}
+
+
+.registerForm {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkInput {
+    flex: 0.1;
+    border: none;
+    border-bottom: solid 1px #b5b5b5;
+}

@@ -27,6 +27,8 @@
     color: #fff;
     border-radius: 2.5rem;
     font-size: 1.5rem;
+    width: 90%;
+    border: none;
 }
 
 :global(.ant-message-notice-content) {
@@ -43,4 +45,5 @@
 :global(.ant-message-info span:first-child) {
     margin: 0;
     margin-bottom: 0.5rem;
+    color: #fff;
 }
