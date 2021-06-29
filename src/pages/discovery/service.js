@@ -1,8 +1,9 @@
 import request from 'umi-request'
 import Apis from './../../api'
+import Request from '../../utils/request'
 export const getCarouselList = async (params) => {
     return (
-        request(`${Apis.dicoveryBannerApi}?type=${params.tabType}`)
+        Request(`${Apis.dicoveryBannerApi}?type=${params.tabType}`)
             .then((res) => {
                 // if (response.status == 200) {
                 //     if (data.code == 200)
@@ -11,6 +12,8 @@ export const getCarouselList = async (params) => {
                 // }
                 if (res.code == 200)
                     return (res.banners);
+                else {
+                }
 
 
             })

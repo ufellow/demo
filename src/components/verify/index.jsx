@@ -62,7 +62,6 @@ class VerifyCode extends React.Component {
         const { valueA, valueB, valueC, valueD, maxLength } = this.state;
         return (
             <div className={styles.verify_box}>
-                <Header />
                 <Form onSubmit={this.handleSubmit} className={styles.registerForm}>
                     <Input
                         className={styles.checkInput}
@@ -106,6 +105,9 @@ class VerifyCode extends React.Component {
                         onChange={e => this.handleInputValue(e, "D")}
                     />
                 </Form>
+                <div>
+                    获取验证码
+                </div>
             </div >
         )
     }

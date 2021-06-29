@@ -17,7 +17,15 @@
 
 .input_box span {
     color: #b5b5b5;
+}
 
+.captcha_box {
+    display: flex;
+}
+
+.captcha_box .input_box {
+    margin-top: 0;
+    flex: 1;
 }
 
 .regist_nextstep {

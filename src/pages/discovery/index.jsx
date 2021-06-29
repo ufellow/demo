@@ -90,7 +90,7 @@ const Discovery = (props) => {
     )
 }
 const mapStateToProps = (state) => {
-    // console.log(temp)
+    // console.log(state)
     return {
         banners: state.discovery.banners,
         tabType: 2,

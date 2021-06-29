@@ -10,6 +10,7 @@ const carouselModel = {
     },
     reducers: {
         getList(state, action) {
+            console.log(action)
             return action.payload
         },
         // getRecommend(state, action) {
